@@ -1,0 +1,43 @@
+.services__content{
+}
+
+.cards__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px solid darkseagreen;
+}
+
+.burger-btn {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.burger-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 20px;
+    background: black;
+    height: 3px;
+    border-radius: 10px;
+}
+.burger-btn-span {
+    position: absolute;
+    top:9px;
+    width: 20px;
+    background: black;
+    height: 3px;
+    border-radius: 10px;
+}
+.burger-btn:after {
+    content: '';
+    position: absolute;
+    bottom:0;
+    width: 20px;
+    background: black;
+    height: 3px;
+    border-radius: 10px;
+}
