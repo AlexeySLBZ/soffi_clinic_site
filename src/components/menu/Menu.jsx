@@ -36,13 +36,22 @@ const Menu = ({active, setActive}) => {
               {services.map((el,index)=>{
                 return (
                   <li key={index}>
-                    <Link  className="li__item" style={{ textDecoration: 'none' }}
+                    {el.patchName === "Контакты"?
+                      <a href="#contact"
+                         className="li__item" style={{ textDecoration: 'none' }}
+                              key={index} to={el.patch}
+                              onClick={()=>setActive(false)}
+                      >
+                        {el.patchName.toUpperCase()}
+                        <i className="material-icons">send</i>
+                      </a>:
+                    <Link className="li__item" style={{ textDecoration: 'none' }}
                            key={index} to={el.patch}
                            onClick={()=>setActive(false)}
                     >
                       {el.patchName.toUpperCase()}
                       <i className="material-icons">send</i>
-                    </Link>
+                    </Link>}
                   </li>
                 )
               }

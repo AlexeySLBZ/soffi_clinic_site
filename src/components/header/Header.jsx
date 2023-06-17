@@ -59,7 +59,7 @@ function Header() {
           <Link to="/video">Video</Link>
           {/*<Link to="/shop">Магазин</Link>*/}
           <Link to="/reviews">Отзывы</Link>
-          <Link to="/contacts">Контакты</Link>
+          <a href="#contact">Контакты</a>
           {/*<Link to="*">*</Link>*/}
         </nav>
     </header>
