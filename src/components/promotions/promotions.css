@@ -1,0 +1,60 @@
+.promotions__content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100vw;
+}
+.promotions__container {
+    display: flex;
+    margin: 10px 0 10px 0;
+    padding: 5px 10px 5px 10px;
+    height: 60vh;
+    width: 100%;
+    align-items: center;
+    /*background:*/
+    /*        radial-gradient(black 3px, transparent 4px),*/
+    /*        radial-gradient(black 3px, transparent 4px),*/
+    /*        linear-gradient(#fff 4px, transparent 0),*/
+    /*        linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),*/
+    /*        linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),*/
+    /*        #fff;*/
+    /*background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;*/
+    /*background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;*/
+}
+.slide__promo{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.slide__promo img {
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+}
+
+.slide-size {
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 600px) {
+    .slide__promo img {
+        cursor: pointer;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 0;
+        height: 65vh;
+    }
+}
+

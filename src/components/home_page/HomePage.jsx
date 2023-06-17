@@ -1,11 +1,11 @@
 import "./homePage.css"
-import CarouselSlider from "../carousel/CarouselSlider";
+import Promotions from "../promotions/Promotions";
 function HomePage() {
 
   return (
     <main className="homePage__content">
       <section>
-        <CarouselSlider/>
+        <Promotions/>
       </section>
     </main>
   );

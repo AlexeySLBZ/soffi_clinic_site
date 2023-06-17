@@ -1,7 +1,58 @@
 
-.reviews{
+.reviews__content{
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     min-width: 0;
+    width: 100%;
+    margin-top:5%;
+}
+
+.header-text{
+    color: rgba(57, 57, 61, 0.59);
+    font-family:Georgia,serif;
+    font-style:italic;
+}
+.reviews__container {
+    display: flex;
+    margin: 10px 0 10px 0;
+    height: 60vh;
+    width: 100%;
+    /*background:*/
+    /*        radial-gradient(black 3px, transparent 4px),*/
+    /*        radial-gradient(black 3px, transparent 4px),*/
+    /*        linear-gradient(#fff 4px, transparent 0),*/
+    /*        linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),*/
+    /*        linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),*/
+    /*        #fff;*/
+    /*background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;*/
+    /*background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;*/
+}
+
+.review__photo {
+    min-height: 40vh;
+    /*min-width: 50vw;*/
+    display: flex;
+    justify-content: center;
+}
+.review__photo img {
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    min-height: 315px;
+    margin-right: 0;
+}
+
+.show {
+    position: absolute;
+    border-radius: 20px;
+    min-width: 10vw;
+    min-height: 60vh;
+    z-index: 11;
+
 }

@@ -1,0 +1,88 @@
+.contactForm__content {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    /*align-items: center;*/
+    align-self: center;
+    z-index: 15;
+}
+
+.formBtn__close {
+    color:white;
+    cursor: pointer;
+}
+
+.register {
+    height: 320px !important;
+    width: 300px;
+    background: -webkit-linear-gradient(left, #055a4f, #00c6ff);
+    margin-top: 3%;
+    padding: 5%;
+    border-radius: 2.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+
+.register .nav-tabs .nav-link:hover {
+    border: none;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.register-form {
+   width: 90%;
+}
+
+.form-control::placeholder {color: white;}
+.form-control {color: white !important;}
+
+
+.register-heading {
+    color: #e9ecef;
+}
+
+.register-heading h1 {
+    margin-left: 21%;
+    color: #e9ecef;
+}
+
+.btnSubmit {
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #03612e;
+    border: none;
+    cursor: pointer;
+}
+
+.btnSubmit:disabled{
+    background-color: darkgray;
+
+}
+
+.float {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    bottom: 20%;
+    right: 15%;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 15;
+}
+
+

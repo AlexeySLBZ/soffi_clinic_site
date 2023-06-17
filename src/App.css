@@ -1,6 +1,7 @@
 .App {
   display: flex;
   text-align: center;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -9,4 +10,5 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 

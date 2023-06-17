@@ -1,4 +1,79 @@
 .footer__content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 1px rgba(96, 103, 108, 0.59);
+    background-color: black;
+
+}
+
+.header-text__footer{
+    color:white;
+    font-family:Georgia,serif;
+    font-style:italic;
+    padding: 10px;
+}
+
+.map-wrapper {
+    padding: 10px;
+}
+
+   .footer__content>address {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+
+    }
+    .reviews__wrapper{
+        display:flex;
+        justify-content: center;
+    }
+
+
+.button__callback {
+    /*position: absolute;*/
+    margin: 10px;
+    z-index: 100;
+    bottom:0;
+    align-items: center;
+}
+.maps__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    border-radius: 10px;
+    opacity: 0.8;
+    max-width: 95%;
+    min-height: 2rem;
+    flex-grow: 1;
+    min-width: 0;
+    font-size: 1.3rem;
+    padding: 1%;
+}
+
+.map{
+    min-width: 50vw;
+    min-height: 40vh;
+    padding: 25px;
+}
+
+.address__link:hover {
+    color: blue;
+}
+
+@media (max-width: 600px) {
+    .map {
+        min-width: 100vw;
+        padding: 0;
+    }
+    .maps__content{
+        border-radius: 15px;
+        font-size: 1rem;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
 }

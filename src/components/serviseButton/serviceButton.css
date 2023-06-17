@@ -1,0 +1,32 @@
+.serviceBtn-close{
+    display: none;
+}
+    @media (max-width: 600px) {
+        .serviceBtn {
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            width: 2.6rem;
+            height: 2.6rem;
+            background-color: #5377f3;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 0.8rem;
+            left:2%;
+            top:19%;
+            -webkit-filter: grayscale(100%);
+            z-index: 15;
+        }
+        .serviceBtn:active {
+            background-color: #47a84b;
+            box-shadow: 8px 10px 10px rgba(62, 62, 65, 0.59);
+            -webkit-filter: none;
+        }
+    }
+
+
+
+
+

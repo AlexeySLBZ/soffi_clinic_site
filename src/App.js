@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <Body style={{"padding-top":"50hv"}}/>
+      <Body/>
       <Footer/>
     </div>
   );

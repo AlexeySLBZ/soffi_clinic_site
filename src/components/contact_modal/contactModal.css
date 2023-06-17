@@ -1,27 +1,42 @@
+
+.contactModal__content{
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+.contactModal__content>.btn__callback{
+    margin: 20px 0 20px 0;
+}
 .form__callback {
+    position:fixed;
+    top: 40vh;
+    /*left: 40vw;*/
     background-color: white;
     padding: 5px;
-    border-left: 2px black;
+    border: 2px black;
     border-radius: 5px;
-
-
+    box-shadow: 8px 10px 10px rgba(62, 62, 65, 0.59);
 }
 
-.button__modal{
-    margin-left: 2px;
-    border-radius: 5px;
+.btn__wrapper{
+    display: flex;
+    flex-direction: row;
 }
 
-.callback__button {
+.btn__callback {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
     width: 150px;
     height: 40px;
-    background-color: #4CAF50;
+    background-color: #5377f3;
     color: white;
     border: none;
     cursor: pointer;
-    /*margin-top: 20px;*/
+    margin: 2px;
+    border-radius: 5px;
 }
 
-.callback__button:hover {
-    background-color: #3e8e41;
+.btn__callback:hover {
+    background-color: #47a84b;
 }

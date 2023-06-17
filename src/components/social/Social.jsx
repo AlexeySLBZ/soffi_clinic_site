@@ -1,11 +1,10 @@
 import React, {PureComponent} from 'react';
-
+import instagram from "./Instagram.svg"
+import telegram from "./Telegram.svg"
+import whatsAp from "./WhatsApp.svg"
+import vk from "./VK.svg"
+import youTube from "./YouTube.svg"
 import "./social.css"
-
-import insta from "./instagram_image.png"
-import telega from "./Telegram_image.png"
-import vk from "./VK_image.png"
-import ws from "./WhatsApp_Image.png"
 
 class Social extends PureComponent {
   render() {
@@ -16,19 +15,23 @@ class Social extends PureComponent {
           <li>
             <a href="https://instagram.com/cosmetolog_sulaberidze_samara?igshid=YmMyMTA2M2Y=" title="instagram"
                target="_blank" rel="noopener">
-              <img className="social-icon-image" src={insta}/>
+              <img className="social-icon-image" src={instagram}/>
             </a>
           </li> <li>
             <a href="https://telegram.im/@Asiya_sulaberidze" title="telegram" target="_blank" rel="noopener">
-              <img className="social-icon-image" src={telega}/>
+              <img className="social-icon-image" src={telegram}/>
             </a>
           </li> <li>
             <a href="https://api.whatsapp.com/send?phone=79297072871" title="WhatsApp" target="_blank" rel="noopener">
-              <img className="social-icon-image" src={ws}/>
+              <img className="social-icon-image" src={whatsAp}/>
             </a>
           </li> <li>
             <a href="https://vk.com/kosmetolog_ar" title="VK" target="_blank" rel="noopener">
               <img className="social-icon-image" src={vk}/>
+            </a>
+          </li><li>
+            <a href="https://www.youtube.com/@asiyasulaberidze6231" title="YouTube" target="_blank" rel="noopener">
+              <img className="social-icon-image" src={youTube}/>
             </a>
           </li>
         </ul>
@@ -36,6 +39,5 @@ class Social extends PureComponent {
     );
   }
 }
-
 
 export default Social;

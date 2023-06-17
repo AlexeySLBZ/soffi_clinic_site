@@ -38,8 +38,8 @@ const ServicesList = () => {
   }
 
   return (
-    <div className="services__list" >
-    <label htmlFor="select" className="for_label">УСЛУГИ</label>
+    <div className="services__list">
+    {/*<label htmlFor="select" className="for_label">УСЛУГИ</label>*/}
        {/*<select onChange={(e) => setSelected(e.target.value)}>*/}
        <select id ="select">
          <option value="" disabled selected>Select a service</option>
