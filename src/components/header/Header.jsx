@@ -22,7 +22,7 @@ function Header() {
           {socialVisible}
         <Link to="/">
           {/*{logoVisible}*/}
-          <h5 className="header-text__logo">Soffi Clinic</h5>
+          <h2 className="header-text__logo">Soffi Clinic</h2>
         </Link>
         <address className="contact__wrapper">
           <i className="phone__btn">

@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     box-shadow: 0 1px 1px rgba(96, 103, 108, 0.59);
     z-index: 15;
 }
@@ -132,7 +132,6 @@
     justify-content: center;
 
 }
-
 @media screen and (max-width: 600px){
     .header__nav{
         display:none;
@@ -145,7 +144,7 @@
         color: white;
     }
     .header__wrapper{
-        padding: 0 0 0 30%;
+        padding: 0 5px 0 30%;
     }
     .phone__btn,.location__btn {
         display: flex;
@@ -166,6 +165,8 @@
         background-color: #47a84b;
         -webkit-filter: none;
     }
-
+    .social__content {
+        display: none;
+    }
 }
 

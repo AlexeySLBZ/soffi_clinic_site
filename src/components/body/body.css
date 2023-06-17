@@ -4,6 +4,17 @@
   align-items: center;
   margin-top: 55px;
   justify-content: center;
+  width: 100vw;
+}
+
+@media (min-width: 350px) and (max-width: 1024px) {
+  h2{
+    font-size: calc(20px + (18 - 14) * ( (100vw - 480px) / ( 1024 - 350) ));
+  }
+  h3{
+    font-size: calc(18px + (18 - 14) * ( (100vw - 480px) / ( 1024 - 350) ));
+
+  }
 }
 
 .backgroundImg {

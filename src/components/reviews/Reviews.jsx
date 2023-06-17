@@ -58,7 +58,7 @@ function Reviews() {
 
   return (
     <div className="reviews__content">
-      <h4 className="header-text">Отзывы наших клиентов</h4><br/>
+      <h3 className="header-text">Отзывы наших клиентов</h3><br/>
       <div className='reviews__container'>
         <Swiper
         // install Swiper modules
