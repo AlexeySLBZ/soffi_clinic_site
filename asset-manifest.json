@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/soffi_clinic_site/static/css/main.29eb5ed4.css",
+    "main.css": "/soffi_clinic_site/static/css/main.1b09b8e6.css",
     "main.js": "/soffi_clinic_site/static/js/main.e069b81e.js",
     "static/media/background2.jpg": "/soffi_clinic_site/static/media/background2.cf8c2f65e46c60f70e34.jpg",
     "static/media/m_injection.webp": "/soffi_clinic_site/static/media/m_injection.2bcadc868b54fca54077.webp",
@@ -43,11 +43,11 @@
     "static/media/YouTube.svg": "/soffi_clinic_site/static/media/YouTube.81356fdd8bcb6ffaf9e93e2014a72fe4.svg",
     "index.html": "/soffi_clinic_site/index.html",
     "static/media/VK.svg": "/soffi_clinic_site/static/media/VK.6f0a3f8827307f2ed4345c8bd8ef42ec.svg",
-    "main.29eb5ed4.css.map": "/soffi_clinic_site/static/css/main.29eb5ed4.css.map",
+    "main.1b09b8e6.css.map": "/soffi_clinic_site/static/css/main.1b09b8e6.css.map",
     "main.e069b81e.js.map": "/soffi_clinic_site/static/js/main.e069b81e.js.map"
   },
   "entrypoints": [
-    "static/css/main.29eb5ed4.css",
+    "static/css/main.1b09b8e6.css",
     "static/js/main.e069b81e.js"
   ]
 }
