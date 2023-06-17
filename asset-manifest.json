@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/soffi_cosmetology_site/static/css/main.4e8c72c1.css",
-    "main.js": "/soffi_cosmetology_site/static/js/main.70d3f354.js",
+    "main.css": "/soffi_cosmetology_site/static/css/main.9efb5c1a.css",
+    "main.js": "/soffi_cosmetology_site/static/js/main.e8271d2c.js",
     "static/media/background2.jpg": "/soffi_cosmetology_site/static/media/background2.cf8c2f65e46c60f70e34.jpg",
     "static/media/m_injection.webp": "/soffi_cosmetology_site/static/media/m_injection.2bcadc868b54fca54077.webp",
     "static/media/apparat_face-_1_.webp": "/soffi_cosmetology_site/static/media/apparat_face-_1_.3c508bb8229c319fd832.webp",
@@ -43,11 +43,11 @@
     "static/media/YouTube.svg": "/soffi_cosmetology_site/static/media/YouTube.81356fdd8bcb6ffaf9e93e2014a72fe4.svg",
     "index.html": "/soffi_cosmetology_site/index.html",
     "static/media/VK.svg": "/soffi_cosmetology_site/static/media/VK.6f0a3f8827307f2ed4345c8bd8ef42ec.svg",
-    "main.4e8c72c1.css.map": "/soffi_cosmetology_site/static/css/main.4e8c72c1.css.map",
-    "main.70d3f354.js.map": "/soffi_cosmetology_site/static/js/main.70d3f354.js.map"
+    "main.9efb5c1a.css.map": "/soffi_cosmetology_site/static/css/main.9efb5c1a.css.map",
+    "main.e8271d2c.js.map": "/soffi_cosmetology_site/static/js/main.e8271d2c.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e8c72c1.css",
-    "static/js/main.70d3f354.js"
+    "static/css/main.9efb5c1a.css",
+    "static/js/main.e8271d2c.js"
   ]
 }
