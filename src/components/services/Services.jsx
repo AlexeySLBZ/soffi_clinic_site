@@ -120,7 +120,7 @@ function Services(props) {
   return (
       <main  className="services__content">
         <h3 className="header-text">Наши услуги</h3><br/>
-        <section className="services__list">
+        <section id="Услуги" className="services__list">
           <Cards arrData={certificates}/>
         </section>
       </main>

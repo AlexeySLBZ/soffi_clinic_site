@@ -27,6 +27,7 @@ const promoArr = document.documentElement.clientWidth >=600? [lpg_body,lpg_face,
  [lpg_face_screen,lpg_body_screen,injection_screen,massage_screen];
 function Promotions () {
 
+
   const [promotions, setPromotions] = useState([]);
 
   useEffect(() => {

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {Link, Route} from 'react-router-dom';
 import logo from "./logo.png";
 import location from "./logo_map.svg"
@@ -10,18 +10,46 @@ import Social from "../social/Social";
 
 function Header() {
 
+  const navName = [
+    {
+      patch:"/homePage",
+      patchName:"Главная",
+    },
+    {
+      patch:"/services",
+      patchName:"Услуги",
+    },
+    {
+      patch:"/video",
+      patchName:"Видео",
+    },
+    {
+      patch:"/reviews",
+      patchName:"Отзывы",
+    },
+    {
+      patch:"/contacts",
+      patchName:"Контакты",
+    },
+  ]
+
+  // const [contacts, services, videos, reviews] = useRef(null)
+  // const executeScroll = () => myRef.current.scrollIntoView()
+
   // const logoVisible = document.documentElement.clientWidth >=850?
   //    <img src={logo} alt="Logo Soffi Cosmetology" className="header__logo" />:<h5 className="header-text__footer">Soffi Clinic</h5>
-  const socialVisible = document.documentElement.clientWidth >600&&
-    <Social className="social__content"/>
+
+
+
 
   const [menuActive, setMenuActive]=useState(false)
   return (
     <header className="header">
       <div className='header__wrapper'>
-          {socialVisible}
-        <Link to="/">
-          {/*{logoVisible}*/}
+        <div className="social__content">
+          <Social/>
+        </div>
+        <Link style={{"text-decoration": "none"}} to="/">
           <h2 className="header-text__logo">Soffi Clinic</h2>
         </Link>
         <address className="contact__wrapper">
@@ -50,18 +78,34 @@ function Header() {
         <Menu
           active = {menuActive}
           setActive = {setMenuActive}
+          navName={navName}
         />
-
       </div>
-        <nav className="header__nav">
-          <Link to="/homePage">Главная</Link>
-          <Link to="/services">Услуги</Link>
-          <Link to="/video">Video</Link>
-          {/*<Link to="/shop">Магазин</Link>*/}
-          <Link to="/reviews">Отзывы</Link>
-          <a href="#contact">Контакты</a>
-          {/*<Link to="*">*</Link>*/}
-        </nav>
+      <menu className="nav__wrapper">
+        <ul className="header__nav">
+          {navName.map((el,index)=>{
+              return (
+                  <li key={index}>
+                    <Link key={index} to={el.patch}
+                          onClick={()=>setMenuActive(false)}
+                    >
+                      {el.patchName.toUpperCase()}
+                    </Link>
+                  </li>
+              )
+            }
+          )}
+        </ul>
+      </menu>
+      {/*  <nav className="header__nav">*/}
+      {/*    <Link to="/homePage">Главная</Link>*/}
+      {/*    <Link to="/services">Услуги</Link>*/}
+      {/*    <Link to="/video">Video</Link>*/}
+      {/*    /!*<Link to="/shop">Магазин</Link>*!/*/}
+      {/*    <Link to="/reviews">Отзывы</Link>*/}
+      {/*    <a href="#contact">Контакты</a>*/}
+      {/*    /!*<Link to="*">*</Link>*!/*/}
+      {/*  </nav>*/}
     </header>
   );
 }
