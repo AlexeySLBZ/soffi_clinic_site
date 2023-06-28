@@ -18,14 +18,14 @@ const Cards = ({arrData}) => {
           </div>
           <div className="card-content">
             <span className="card-title activator grey-text text-darken-4">
-              <i className="material-icons right">more_vert</i>
+              <i className="small material-icons right">keyboard_arrow_up</i>
             </span>
             <p><a href="#">{el.procedure}</a></p>
             <div className="card__promo">{el.promo}</div>
           </div>
           <div className="card-reveal">
             <span className="card-title grey-text text-darken-4">
-              <i className="material-icons right">close</i>
+              <i className="small material-icons right">keyboard_arrow_down</i>
             </span>
             <i>{el.description}</i>
           </div>

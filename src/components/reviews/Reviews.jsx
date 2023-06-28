@@ -57,7 +57,7 @@ function Reviews() {
   }
 
   return (
-    <div className="reviews__content">
+    <main id="Отзывы" className="reviews__content">
       <h3 className="header-text">Отзывы наших клиентов</h3><br/>
       <div className='reviews__container'>
         <Swiper
@@ -109,7 +109,7 @@ function Reviews() {
         )}
       </Swiper>
         </div>
-    </div>
+    </main>
   );
 }
 

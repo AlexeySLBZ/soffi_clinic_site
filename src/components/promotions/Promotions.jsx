@@ -23,7 +23,8 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
 import 'swiper/css/effect-flip'
 
-const promoArr = document.documentElement.clientWidth >=600? [lpg_body,lpg_face,massage,injection,]:
+const promoArr = window.innerHeight < window.innerWidth
+? [lpg_body,lpg_face,massage,injection,]:
  [lpg_face_screen,lpg_body_screen,injection_screen,massage_screen];
 function Promotions () {
 

@@ -26,7 +26,7 @@ export default function Video(){
 // }
 
   return (
-<main className="video__content">
+<main className="video__content" id="Видео">
   <h3 className="header-text">Видеоблог</h3><br/>
   <div className="page">
     {myVids.map((item, index)=>

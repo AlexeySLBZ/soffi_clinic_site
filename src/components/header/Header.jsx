@@ -40,7 +40,11 @@ function Header() {
   //    <img src={logo} alt="Logo Soffi Cosmetology" className="header__logo" />:<h5 className="header-text__footer">Soffi Clinic</h5>
 
 
-
+function navElClick (atr){
+  setMenuActive(false)
+  const element = document.getElementById(`${atr}`);
+  element.scrollIntoView(true);
+}
 
   const [menuActive, setMenuActive]=useState(false)
   return (
@@ -87,7 +91,7 @@ function Header() {
               return (
                   <li key={index}>
                     <Link key={index} to={el.patch}
-                          onClick={()=>setMenuActive(false)}
+                          onClick={()=>navElClick(el.patchName)}
                     >
                       {el.patchName.toUpperCase()}
                     </Link>

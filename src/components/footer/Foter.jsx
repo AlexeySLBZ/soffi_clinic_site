@@ -11,7 +11,7 @@ function Footer (){
 
   return(
     <main className="footer__content">
-      <address>
+      <address id="Контакты">
         <div className="maps__content">
           <h5 className="header-text__footer">Контакты</h5>
             <YMaps >
@@ -35,7 +35,7 @@ function Footer (){
             </YMaps>
             <br/>
         </div>
-        <a className="header-text__footer" href="https://yandex.ru/maps/-/CCUzRWuI0D" itemProp="address" target="_blank"
+        <a className="header-text__footer" href="https://yandex.ru/maps/-/CCUHaWQnpB" itemProp="address" target="_blank"
            itemType="http://schema.org/PostalAddress">г.Самара ул. Солнечная д.20 оф. 307
         </a>
         <span><br/>

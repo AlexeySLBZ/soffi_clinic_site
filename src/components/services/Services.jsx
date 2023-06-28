@@ -25,7 +25,7 @@ const certificates = [{
     "Мезотерапия: питайте кожу полезными веществами для улучшения текстуры и цвета.\n" +
     "Биоревитализация: омолаживайте и увлажняйте кожу, снижайте пигментацию и улучшайте тонус.\n" +
     "Наши опытные косметологи применяют передовые методы и технологии, чтобы добиться естественных и " +
-    "долгосрочных результатов. Приходите в Soffi Cosmetology и доверьте свою кожу профессионалам!\n"
+    "долгосрочных результатов. Приходите в Soffi Clinic и доверьте свою кожу профессионалам!\n"
 },{
   procedure: 'ЭСТЕТИЧЕСКАЯ КОСМЕТОЛОГИЯ',
   promo: "Восстановление молодости вашей кожи! Пилинги, маски, мезотерапия и другие процедуры," +
@@ -118,9 +118,9 @@ const certificates = [{
 function Services(props) {
 
   return (
-      <main  className="services__content">
+      <main id="Услуги" className="services__content">
         <h3 className="header-text">Наши услуги</h3><br/>
-        <section id="Услуги" className="services__list">
+        <section className="services__list">
           <Cards arrData={certificates}/>
         </section>
       </main>

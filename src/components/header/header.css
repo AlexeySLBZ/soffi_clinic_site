@@ -63,7 +63,10 @@
     margin: 0;
     height: 50px;
 }
-
+@media screen and (orientation:landscape) {
+    .header__nav{
+        height:25px;
+    }}
 @media screen and (max-width: 950px){
     .text__phone{
         display: none;
