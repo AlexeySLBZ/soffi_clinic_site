@@ -41,9 +41,9 @@ function Header() {
 
 
 function navElClick (atr){
-  setMenuActive(false)
+  // setMenuActive(false)
   const element = document.getElementById(`${atr}`);
-  element.scrollIntoView(true);
+  return element.scrollIntoView(true);
 }
 
   const [menuActive, setMenuActive]=useState(false)
