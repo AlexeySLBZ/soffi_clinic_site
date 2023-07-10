@@ -34,6 +34,10 @@ const imgArr = [review1,review2,review3,review4,review5,review6,review7,review8,
 
 function Reviews() {
 
+  useEffect(()=> {
+    const element = document.getElementById('Отзывы');
+    return element.scrollIntoView(false);
+  },[])
 
   const [reviews, setReviews] = useState([]);
 

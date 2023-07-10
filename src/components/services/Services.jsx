@@ -9,7 +9,7 @@ import mask from "./mask (1).webp"
 import apparat_face from "./Apparat__technology_face.webp"
 import massage_hend from "./massage_hend.webp"
 import apparat_body from  "./apparat_body.webp"
-import React from "react";
+import React, {useEffect} from "react";
 
 const certificates = [{
   procedure: 'ИНЪЕКЦИОННАЯ КОСМЕТОЛОГИЯ',
@@ -117,9 +117,15 @@ const certificates = [{
 
 function Services(props) {
 
+  useEffect(()=> {
+    const element = document.getElementById('Услуги');
+    return element.scrollIntoView(false);
+  },[])
+
+
   return (
-      <main id="Услуги" className="services__content">
-        <h3 className="header-text">Наши услуги</h3><br/>
+      <main className="services__content">
+        <h3 id="Услуги" className="header-text">Наши услуги</h3><br/>
         <section className="services__list">
           <Cards arrData={certificates}/>
         </section>

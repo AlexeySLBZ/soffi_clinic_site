@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useEffect, useState} from "react"
 import "./footer.css"
 import ContactForm from "../contactForm/ContactForm";
 import Social from "../social/Social";
@@ -9,12 +9,17 @@ function Footer (){
   // const socialVisible = document.documentElement.clientWidth <=600&&
   //   <Social className="social__content"/>
 
+  useEffect(()=> {
+    const element = document.getElementById('Контакты');
+    return element.scrollIntoView(false);
+  },[])
+
   return(
-    <main className="footer__content">
-      <address id="Контакты">
+    <main id="Контакты" className="footer__content">
+      <address>
         <div className="maps__content">
           <h5 className="header-text__footer">Контакты</h5>
-            <YMaps >
+            <YMaps>
               <Map className="map"
                    defaultState={{
                      center: [53.241994,50.186773],

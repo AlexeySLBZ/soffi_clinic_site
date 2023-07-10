@@ -1,6 +1,12 @@
 import './video.css'
-import React from "react";
+import React, {useEffect} from "react";
 export default function Video(){
+
+  useEffect(()=> {
+    const element = document.getElementById('Видео');
+    return element.scrollIntoView(false);
+  },[])
+
   const videoEl = document.getElementsByTagName('video')[0],
     videoEl2 = document.getElementsByTagName('video')[1],
     playBtn = document.getElementById('playBtn'),

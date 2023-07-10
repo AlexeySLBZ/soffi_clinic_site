@@ -8,7 +8,7 @@ import ServiceButton from "../serviseButton/ServiceButton";
 import Menu from "../menu/Menu";
 import Social from "../social/Social";
 
-function Header() {
+function Header(setContactActive) {
 
   const navName = [
     {
@@ -40,11 +40,7 @@ function Header() {
   //    <img src={logo} alt="Logo Soffi Cosmetology" className="header__logo" />:<h5 className="header-text__footer">Soffi Clinic</h5>
 
 
-function navElClick (atr){
-  // setMenuActive(false)
-  const element = document.getElementById(`${atr}`);
-  return element.scrollIntoView(true);
-}
+
 
   const [menuActive, setMenuActive]=useState(false)
   return (
@@ -91,7 +87,6 @@ function navElClick (atr){
               return (
                   <li key={index}>
                     <Link key={index} to={el.patch}
-                          onClick={()=>navElClick(el.patchName)}
                     >
                       {el.patchName.toUpperCase()}
                     </Link>

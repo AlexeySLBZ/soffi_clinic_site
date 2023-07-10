@@ -1,4 +1,4 @@
-import {Route, Routes} from "react-router-dom";
+import {Route,Routes} from "react-router-dom";
 import AddCertificatePromotion from "../sertificates/AddCertificatePromotion";
 import HomePage from "../home_page/HomePage";
 import Services from "../services/Services";
