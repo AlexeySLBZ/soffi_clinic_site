@@ -76,7 +76,6 @@
 .header__nav a {
     font-size: 1rem;
     color: #ffffff;
-    text-decoration: none;
     margin-right: 1rem;
     box-shadow: none;
     height: 50px;
@@ -96,7 +95,6 @@
 
 .contact .phone{
     color: #ffffff;
-    text-decoration: none;
 }
 
 .contact .phone:hover {

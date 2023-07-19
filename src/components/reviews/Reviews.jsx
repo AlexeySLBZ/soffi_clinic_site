@@ -72,7 +72,7 @@ function Reviews() {
         grabCursor="true"
         centeredSlides="true"
         spaceBetween={0}
-        slidesPerView={8}
+        slidesPerView={1}
         loop="true"
         pagination={{ clickable: true, dynamicBullets: true }}
         coverflowEffect={{

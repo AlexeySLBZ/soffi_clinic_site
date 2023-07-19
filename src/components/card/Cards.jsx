@@ -5,7 +5,7 @@ import logo from "../header/logo.png";
 
 const Cards = ({arrData}) => {
 
-  const cardWrapper = document.documentElement.clientWidth > 600&&"card__wrapper"
+  const cardWrapper = document.documentElement.clientWidth > 600?"card__wrapper":undefined
 
 
 

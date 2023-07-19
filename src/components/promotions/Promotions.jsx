@@ -23,20 +23,38 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
 import 'swiper/css/effect-flip'
 
-const promoArr = window.innerHeight < window.innerWidth
-? [lpg_body,lpg_face,massage,injection,]:
- [lpg_face_screen,lpg_body_screen,injection_screen,massage_screen];
+
 function Promotions () {
+
+  const [promoOrient,setPromoOrient] = useState(true)
+
+  const activeArr = () => {
+    if (window.innerWidth>window.innerHeight) {
+      setPromoOrient(false);
+    } else {
+      setPromoOrient(true);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", activeArr);
+    return () => {
+      window.removeEventListener("resize", activeArr);
+    }
+  }, [])
+
+  const promoArrImg = (atr) => !atr ? [lpg_body,lpg_face,massage,injection,]:
+    [lpg_face_screen,lpg_body_screen,injection_screen,massage_screen];
+
+  useEffect(() => {
+    addPromo("promo")
+  }, [promoOrient])
 
 
   const [promotions, setPromotions] = useState([]);
 
-  useEffect(() => {
-    addPromo("promo")
-  }, [])
-
   const addPromo = (type) => {
-    const newArr = promoArr.map(el => (
+    const newArr = promoArrImg(promoOrient).map(el => (
       {
         type: type,
         content: el
@@ -45,8 +63,7 @@ function Promotions () {
     setPromotions(newArr);
   }
 
-
-  const hidden = (id) => {
+  const showSlide = (id) => {
     const promoId = document.getElementById(id);
     promoId.classList.toggle('show');
   }
@@ -73,7 +90,7 @@ function Promotions () {
                 <SwiperSlide key={index}>
                   <div className={`slide__${promo.type} slide-size`}>
                     {/*{promo.type === 'text' && <p>{promo.content}</p>}*/}
-                    {promo.type === 'promo' && <img src={promo.content} onClick={() => hidden(index)} id={index} alt="promo slide"/>}
+                    {promo.type === 'promo' && <img src={promo.content} onClick={() => showSlide(index)} id={index} alt="promo slide"/>}
                     {/*{promo.type === 'audio' && <audio src={promo.content} controls/>}*/}
                     {/*{promo.type === 'video' && <video src={promo.content} controls/>}*/}
                   </div>

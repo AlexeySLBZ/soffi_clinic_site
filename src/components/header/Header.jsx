@@ -49,7 +49,7 @@ function Header(setContactActive) {
         <div className="social__content">
           <Social/>
         </div>
-        <Link style={{"text-decoration": "none"}} to="/">
+        <Link to="/">
           <h2 className="header-text__logo">Soffi Clinic</h2>
         </Link>
         <address className="contact__wrapper">

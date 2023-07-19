@@ -1,12 +1,15 @@
 import "./homePage.css"
 import Promotions from "../promotions/Promotions";
 import {useEffect} from "react";
-function HomePage() {
 
-  // useEffect(()=> {
-  //   const element = document.getElementById('Главная');
-  //   return element.scrollIntoView(false);
-  // },[])
+function HomePage(contact) {
+console.log(contact)
+
+
+  useEffect(()=> {
+    const element = document.getElementById(contact.contact);
+    return element.scrollIntoView(false);
+  },[contact])
 
   return (
     <main className="homePage__content" id='Главная'>

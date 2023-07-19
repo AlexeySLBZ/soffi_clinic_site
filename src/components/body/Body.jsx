@@ -25,11 +25,11 @@ function Body(){
           {/*Для администратора*/}
           <Route path="/certificatePromotion" elements={<AddCertificatePromotion/>}/>
           {/*Для клиента*/}
-          <Route path="/*" element={<HomePage/>}/>
+          <Route path="/*" element={<HomePage contact ="Главная"/>}/>
           <Route path="/services" element={<Services/>}/>
           <Route path="/video" element={<Video/>}/>
           <Route path="/reviews" element={<Reviews/>}/>
-          {/*<Route path="/reviews" element={<Reviews/>}/>*/}
+          <Route path="/contacts" element={<HomePage contact ="Контакты"/>}/>
           <Route path="*" elements={<Account/>}/>
         </Routes>
 

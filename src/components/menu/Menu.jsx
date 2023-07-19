@@ -6,8 +6,6 @@ const Menu = ({active, setActive, navName}) => {
 
   function navElClick (atr){
     setActive(false)
-    const element = document.getElementById(`${atr}`);
-    return element.scrollIntoView({block: "center", behavior: "smooth"});
   }
 
   return (
@@ -20,9 +18,9 @@ const Menu = ({active, setActive, navName}) => {
               {navName.map((el,index)=>{
                 return (
                   <li key={index}>
-                    <Link className="li__item" style={{ textDecoration: 'none' }}
+                    <Link className="li__item"
                            key={index} to={el.patch}
-                           // onClick={()=>navElClick(el.patchName)}
+                           onClick={()=>navElClick(el.patchName)}
                     >
                         {el.patchName.toUpperCase()}
                         <i className="material-icons">send</i>

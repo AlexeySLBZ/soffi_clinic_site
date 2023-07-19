@@ -6,12 +6,11 @@ import {Map, Placemark, YMaps} from "@pbe/react-yandex-maps";
 
 function Footer (){
 
-  // const socialVisible = document.documentElement.clientWidth <=600&&
-  //   <Social className="social__content"/>
 
   useEffect(()=> {
     const element = document.getElementById('Контакты');
     return element.scrollIntoView(false);
+
   },[])
 
   return(

@@ -5,6 +5,8 @@
   margin-top: 55px;
   justify-content: center;
   width: 100vw;
+  overflow-x:hidden;
+
 }
 
 @media (min-width: 320px) and (max-width: 1024px) {
