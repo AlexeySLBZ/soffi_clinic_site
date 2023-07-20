@@ -26,13 +26,13 @@ import 'swiper/css/effect-flip'
 
 function Promotions () {
 
-  const [promoOrient,setPromoOrient] = useState(true)
+  const [promoOrient,setPromoOrient] = useState(window.innerWidth>window.innerHeight)
 
   const activeArr = () => {
     if (window.innerWidth>window.innerHeight) {
-      setPromoOrient(false);
-    } else {
       setPromoOrient(true);
+    } else {
+      setPromoOrient(false);
     }
   }
 
@@ -43,7 +43,7 @@ function Promotions () {
     }
   }, [])
 
-  const promoArrImg = (atr) => !atr ? [lpg_body,lpg_face,massage,injection,]:
+  const promoArrImg = (atr) => atr ? [lpg_body,lpg_face,massage,injection,]:
     [lpg_face_screen,lpg_body_screen,injection_screen,massage_screen];
 
   useEffect(() => {

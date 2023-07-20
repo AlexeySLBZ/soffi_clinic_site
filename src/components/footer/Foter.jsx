@@ -1,17 +1,9 @@
-import React, {useEffect, useState} from "react"
 import "./footer.css"
 import ContactForm from "../contactForm/ContactForm";
 import Social from "../social/Social";
 import {Map, Placemark, YMaps} from "@pbe/react-yandex-maps";
 
 function Footer (){
-
-
-  useEffect(()=> {
-    const element = document.getElementById('Контакты');
-    return element.scrollIntoView(false);
-
-  },[])
 
   return(
     <main id="Контакты" className="footer__content">

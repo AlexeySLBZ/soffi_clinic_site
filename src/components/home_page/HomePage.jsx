@@ -3,8 +3,6 @@ import Promotions from "../promotions/Promotions";
 import {useEffect} from "react";
 
 function HomePage(contact) {
-console.log(contact)
-
 
   useEffect(()=> {
     const element = document.getElementById(contact.contact);
