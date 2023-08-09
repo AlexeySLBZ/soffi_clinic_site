@@ -1,6 +1,6 @@
 import './services .css';
 // import ContactModal from "../contact_modal/ContactModal";
-import Cards from "../card/Cards";
+import Cards from "../card/Cards.jsx";
 
 import injection from "./injection (1).webp"
 import massage_drensge from "./massage_drainage.webp";

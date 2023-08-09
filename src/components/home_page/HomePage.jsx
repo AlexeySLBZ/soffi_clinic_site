@@ -1,5 +1,5 @@
 import "./homePage.css"
-import Promotions from "../promotions/Promotions";
+import Promotions from "../promotions/Promotions.jsx";
 import {useEffect} from "react";
 
 function HomePage(contact) {

@@ -1,12 +1,11 @@
-import React, {useEffect, useRef, useState} from 'react';
-import {Link, Route} from 'react-router-dom';
-import logo from "./logo.png";
+import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
 import location from "./logo_map.svg"
 import phone_img from "./phone_img.png"
 import "./header.css"
-import ServiceButton from "../serviseButton/ServiceButton";
-import Menu from "../menu/Menu";
-import Social from "../social/Social";
+import ServiceButton from "../serviseButton/ServiceButton.jsx";
+import Menu from "../menu/Menu.jsx";
+import Social from "../social/Social.jsx";
 
 function Header(setContactActive) {
 

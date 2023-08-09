@@ -1,11 +1,11 @@
 import {Route,Routes} from "react-router-dom";
-import AddCertificatePromotion from "../sertificates/AddCertificatePromotion";
-import HomePage from "../home_page/HomePage";
-import Services from "../services/Services";
-import Video from "../Video/Video";
-import Account from "../services/Services";
+import AddCertificatePromotion from "../sertificates/AddCertificatePromotion.jsx";
+import HomePage from "../home_page/HomePage.jsx";
+import Services from "../services/Services.jsx";
+import Video from "../Video/Video.jsx";
+import Account from "../services/Services.jsx";
 import './body.css'
-import Reviews from "../reviews/Reviews";
+import Reviews from "../reviews/Reviews.jsx";
 import React from "react";
 
 function Body(){

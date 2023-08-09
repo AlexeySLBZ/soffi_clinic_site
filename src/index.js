@@ -1,27 +1,9 @@
-import React, {useState} from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter} from "react-router-dom";
-import './index.css';
-import App from './App.js';
-import {AuthRoutes} from "./routers/authRout";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-function Main (){
-  const [authorized, setAuthorized] = useState(false)
+import App from './components/app/app.jsx';
 
-  return(
-    <React.StrictMode>
-      <BrowserRouter>
-        <AuthRoutes.Provider value={{authorized, setAuthorized}}>
-          <App />
-        </AuthRoutes.Provider>
-      </BrowserRouter>
-    </React.StrictMode>
+ReactDOM.render(<App />, document.getElementById('root'));
 
-  )
-}
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
- <Main/>
-);
 

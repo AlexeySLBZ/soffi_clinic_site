@@ -1,6 +1,5 @@
 import "./footer.css"
-import ContactForm from "../contactForm/ContactForm";
-import Social from "../social/Social";
+import Social from "../social/Social.jsx";
 import {Map, Placemark, YMaps} from "@pbe/react-yandex-maps";
 
 function Footer (){

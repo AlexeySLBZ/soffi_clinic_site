@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 import "./servicesList.css"
-import Reviews from "../reviews/Reviews";
 const ServicesList = () => {
   const [selected, setSelected] = useState(null);
 
